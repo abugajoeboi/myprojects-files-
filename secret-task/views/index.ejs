@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Secret Viewer</title>
+    <link rel="stylesheet" href="/css/main.css"> 
+</head>
+<body>
+    <div class="container mx-auto bg-purple-600 w-96 overflow-auto p-6 rounded-lg shadow-lg">
+        <h1 class="text-center mt-10 font-mono text-3xl text-white">Random Secret Viewer</h1>
+
+        <pre class="overflow-auto bg-white text-black p-4 rounded-lg shadow-md "><%= content %></pre>
+
+        <p class="text-center mt-4 text-white"><%= username %></p>
+        <p class="text-center text-white">Refresh the page to see a new secret.</p>
+        </div>
+</body>
+</html>

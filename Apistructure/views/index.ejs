@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="response-area">
+            <p>
+                <%= content %>
+            </p>
+        </div>
+        <form id="myform" method="post">
+            <label for="idInput">ID</label>
+            <input type="text" id="idInput" name="id">
+
+            <label for="secretsInput">Secret</label>
+            <input type="text" id="secretsInput" name="secret">
+
+            <label for="scoreInput">Score</label>
+            <input type="text" id="scoreInput" name="score">
+
+            <label for="submit">Route:</label>
+            <input type="submit" id="get" value="GET" formaction="/get-secret">
+            <input type="submit" id="post" value="POST" formaction="/post-secret">
+            <input type="submit" id="put" value="PUT" formaction="/put-secret">
+            <input type="submit" id="patch" value="PATCH" formaction="/patch-secret">
+            <input type="submit" id="delete" value="DELETE" formaction="/delete-secret">
+        </form>
+    </div>
+</body>
+</html>
